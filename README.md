@@ -23,7 +23,7 @@ Extensive experiments on real-world datasets show that:
 ## Installation
 1. Clone the repository with submodules:
 ```bash
-git clone https://github.com/ziqiwww/wow_benchmark
+git clone --recursive https://github.com/ziqiwww/wow_benchmark
 ```
 2. Build the project:
 ```bash
