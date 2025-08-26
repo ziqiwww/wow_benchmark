@@ -1,18 +1,6 @@
 # [SIGMOD '26] WoW: A Window-to-Window Incremental Index for Range-Filtering Approximate Nearest Neighbor Search [The benchmarking repository].
 
-## Introduction
-> This is the benchmarking repository of WoW, for the header-only library and its python bindings, please check [here](https://github.com/nju-websoft/WoW).
-
-Given a hybrid dataset where every data object consists of a vector and an attribute value, for each query with a target vector and a range filter, range-filtering approximate nearest neighbor search (RFANNS) aims to retrieve the most similar vectors from the dataset and the corresponding attribute value falls in the query range.
-It is a fundamental function in vector database management systems and intelligent systems with embedding abilities.
-Dedicated indices for RFANNS are designed to accelerate query speed with an acceptable accuracy loss on nearest neighbors.
-However, they are still facing the challenges to be constructed incrementally and generalized to achieve superior query performance for arbitrary range filters.
-In this paper, we introduce a window graph-based RFANNS index.
-For incremental construction, we propose an insertion algorithm to add each new vector-attribute pair into a hierarchy of window graphs with varying window size.
-To handle arbitrary range filters, we optimize relevant window search for attribute filter check and vector distance computation by range selectivity.
-Extensive experiments on real-world datasets show that:
-(1) for index construction, the indexing time is on par with the most building-efficient index, and 5$\times$ faster than the most query-efficient index with 0.7--0.9$\times$ smaller size;
-(2) for RFANNS query, it is 1.4$\times$ faster than the most efficient static index and 4$\times$ faster than the most efficient incremental index.
+> This is the benchmarking repository of WoW. For the header-only library and its python bindings, please check [here](https://github.com/nju-websoft/WoW).
 
 ## Requirements
 - A modern C++ compiler that supports C++20
